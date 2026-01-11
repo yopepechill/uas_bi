@@ -29,7 +29,7 @@ server = app.server
 
 app.layout = html.Div([
     html.H1("Customer Churn Dashboard"),
-    dcc.Graph(...)
+    dcc.Graph(figure=px.histogram(df_clean, x='tenure', title='Distribusi Tenure'))
 ])
 
 # =========================
@@ -167,4 +167,5 @@ app.layout = html.Div([
 # =========================
 app.run(debug=True, port=8054)
 # %%
+
 
