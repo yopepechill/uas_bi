@@ -1,7 +1,7 @@
 # %%
 # a. Extracting data from sources
 import pandas as pd
-df = pd.read_csv("C:\\Users\\ASUS\\Documents\\SEM 5\\BUSSINES INTELLIGENCE\\Data_UAS.csv")
+df = pd.read_csv("Data_UAS.csv")
 
 
 # %%
@@ -25,7 +25,7 @@ import pandas as pd
 # DASH APP
 # =========================
 app = Dash(__name__)
-server = app.server     # <<< TARO DI SINI (WAJIB DEPLOY)
+server = app.server     
 
 app.layout = html.Div([
     html.H1("Customer Churn Dashboard"),
@@ -113,7 +113,7 @@ fig_trend = px.line(
 # DASH APP
 # =========================
 app = Dash(__name__)
-server = app.server   # <-- PENTING untuk deploy
+server = app.server   
 
 app.layout = html.Div([
 
@@ -167,3 +167,4 @@ app.layout = html.Div([
 # =========================
 app.run(debug=True, port=8054)
 # %%
+
